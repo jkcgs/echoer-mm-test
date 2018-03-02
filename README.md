@@ -3,6 +3,8 @@ Este script se utiliza para probar webhooks salientes y comandos slash de Matter
 Para ejecutar, es necesario tener Python 3+ y Flask. Se recomienda crear un virtualenv
 en la carpeta e instalar la biblioteca necesaria con `pip install -r requirements.txt`.
 
+El comando de ejecución es: `FLASK_APP=app.py flask run --host=0.0.0.0`
+
 Las URLs de prueba son:
 * `/`: Si es una solicitud tipo POST, se muestra por consola el payload enviado.
 * `/ping`: Responde con contenido JSON que genera un mensaje en Mattermost con el contenido "pong".
